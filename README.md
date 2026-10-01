@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # PAP521S Project A – Municipal Financial Management System (MFMS)
 
 ## Course Information
@@ -91,3 +92,7 @@ gcc -std=c99 -Wall -Wextra -Wpedantic -g main.c input.c employees.c budget.c sup
 
 ## GitHub
 The whole program pushed on github (https://github.com/Crishco-Brothers/_PAP_Project_) before downloading as it is and submition so the whole zip file is exactly as it is on git hub.
+=======
+# _PAP_Project_
+PAP
+>>>>>>> 652b3aced94b413d2839c70e9f26efd69964dc8b
