@@ -1,30 +1,40 @@
 # PAP521S Project A – Individual Contribution Record
 
 ## Student Information
-- Student Name: Mario T Haufiku
-- Student Number: 217066909
+- **Student Name:** Mario T Haufiku
+- **Student Number:** 217066909
+- **Group:** Group 4
 
 ## Assigned Responsibility
-Primary responsibility: Budget Module Creator
+**Primary responsibility:** Budget Management Module
 
 ## Functions / Modules Developed
-- Developed the `addBudget` function to prompt the user for a department name, allocated budget, and expenditure, validating that the register is not full and values are non-negative.
-- Implemented `displayAllBudgets` to present registered departmental budgets in a clear, formatted overview including allocated amounts, expenditure, remaining balances, and status (`WITHIN BUDGET` or `EXCEEDED BUDGET`).
-- Implemented robust public accessor functions (`getBudgetCount`, `getBudgetAllocated`, `getBudgetExpenditure`, and `getBudgetRemaining`) to safely share module data with reporting components.
+- Developed the Budget Management module in `budget.c` and `budget.h`.
+- Implemented `addBudget()` to record a department, allocated budget and expenditure.
+- Added validation to prevent negative financial values and prevent the budget register from exceeding its maximum capacity.
+- Implemented `displayAllBudgets()` to display departmental allocation, expenditure, remaining budget and budget status.
+- Implemented `getBudgetCount()` to provide the number of registered departmental budgets.
+- Implemented `getBudgetAllocated()`, `getBudgetExpenditure()` and `getBudgetRemaining()` as accessor/calculation functions used by the reporting module.
+- Integrated the budget menu using `budgetMenu()` for adding, displaying and returning to the main menu.
 
 ## GitHub Contribution
-Repository: https://github.com/Crishco-Brothers/_PAP_Project_
+**Repository:** https://github.com/Crishco-Brothers/_PAP_Project_
 
-## List of commits/branches/pull requests:
-- Commit: `Completed budget.c and budget.h` – Description: uploaded the complete ready budget.c and budget.h, and it corespinding to all other modeuls from my fellow members and it allighns with the cordinators instruction fot the whole program to run
-- Commit: `Mario individual contribution record` – Description: i uploaded my individual contribution record .
+**Verified contribution:**
+- **Commit:** `Completed budget.c and budget.h`
+- **Description:** Added the completed budget module and header file and aligned the module with the other project components so the full system could compile and run.
 
 ## Testing Performed
-Record the tests personally performed:
-- Main menu validation: Verified loop termination and correct redirection for options 1 through 3.
-- Employee testing: Verified correct integration with general system compilation.
-- Budget testing: Tested successful recording and calculation of remaining funds for multiple departments.
-- Supplier testing: Verified module compilation stability.
-- Asset testing: Verified module compilation stability.
-- Reports testing: Confirmed data visibility across module boundaries using public accessors.
-- Invalid input testing: Validated system response against negative financial entries and exceeding maximum buffer capacity (`MAX_BUDGET`).
+- Tested adding departmental budgets with valid allocation and expenditure values.
+- Tested calculation of remaining budget as allocated budget minus expenditure.
+- Tested the within-budget and exceeded-budget status conditions.
+- Tested rejection of negative allocation and expenditure values.
+- Tested budget display and integration with the reporting module.
+- Checked that the module compiles and links successfully with the complete system.
+
+## Individual Understanding
+I can explain:
+1. How departmental budget data are stored in arrays.
+2. How remaining budget is calculated.
+3. How the system identifies departments that exceed their allocation.
+4. How the budget getter functions allow `reports.c` to use budget information.

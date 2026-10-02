@@ -1,25 +1,45 @@
 # PAP521S Project A – Individual Contribution Record
 
 ## Student Information
-- Student Name: Maritin Nakasole
-- Student Number: 226035220
+- **Student Name:** Maritin Nakasole
+- **Student Number:** 226035220
+- **Group:** Group 4
 
 ## Assigned Responsibility
-Primary responsibility: Employee Management Module
-
-I was responsible for implementing and maintaining the employee registration and payroll-related functions in the project. This included creating the employee data structure, validation checks, employee menu operations, and salary gross calculation logic.
+**Primary responsibility:** Employee Management Module
 
 ## Functions / Modules Developed
-- employees.h: Declared the employee module interface, including the employee menu function, employee count accessor, gross salary calculator, and display function used by the rest of the system.
-- employees.c: Implemented the employee management system, including employee ID validation, name/department input, basic/housing/transport allowance storage, duplicate prevention, employee listing, search by ID, and the overall menu-driven employee workflow.
-- Gross salary logic: Added the getEmployeeGross() function to calculate each employee's total income as basic salary + housing allowance + transport allowance.
-- Validation and error handling: Ensured negative salary values and duplicate employee IDs are rejected, and that the employee register cannot exceed the maximum allowed capacity.
-
+- Developed the Employee Management module in `employees.c` and `employees.h`.
+- Implemented employee storage using arrays for IDs, names, departments, basic salaries, housing allowances and transport allowances.
+- Implemented `addEmployee()` to capture employee information and validate required values.
+- Implemented `findEmployeeById()` to search for employees using their unique IDs.
+- Prevented duplicate employee IDs.
+- Rejected zero or negative employee IDs and negative salary/allowance values.
+- Implemented `displayAllEmployees()` to display registered employee information.
+- Implemented `searchEmployee()` to locate and display an employee by ID.
+- Implemented `getEmployeeCount()` to provide the number of registered employees.
+- Implemented `getEmployeeGross()` to calculate gross salary as basic salary plus housing and transport allowances.
+- Implemented `employeeMenu()` to provide employee-module navigation.
 
 ## GitHub Contribution
-Repository: https://github.com/Crishco-Brothers/_PAP_Project_
+**Repository:** https://github.com/Crishco-Brothers/_PAP_Project_
 
-List your actual commits/branches/pull requests:
-- Commit: Nakasole employee module update – Description: Documented the employee management module responsibilities in the project report, including the employee menu, validation checks, and gross salary calculation implemented in employees.c and employees.h.
+**Verified contribution:**
+- **Commit:** `Add Nakasole employee contribution update`
+- **Description:** Added the employee contribution record documenting the Employee Management responsibilities and implementation.
 
+## Testing Performed
+- Tested adding employees with valid information.
+- Tested rejection of zero and negative employee IDs.
+- Tested rejection of duplicate employee IDs.
+- Tested rejection of negative basic salary and allowance values.
+- Tested employee display and search by ID.
+- Tested gross salary calculation using basic salary plus housing and transport allowances.
+- Checked employee-module integration with the reports module.
 
+## Individual Understanding
+I can explain:
+1. How employee search works using `findEmployeeById()`.
+2. How gross salary is calculated by `getEmployeeGross()`.
+3. Why arrays are used to store multiple employee records.
+4. How duplicate IDs and invalid salary values are handled.

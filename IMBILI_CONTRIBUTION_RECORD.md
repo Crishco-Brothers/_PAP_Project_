@@ -1,48 +1,39 @@
-\# PAP521S Project A – Individual Contribution Record
+# PAP521S Project A – Individual Contribution Record
 
+## Student Information
+- **Student Name:** Soini Imbili
+- **Student Number:** 226067335
+- **Group:** Group 4
 
+## Assigned Responsibility
+**Primary responsibility:** Main Menu and Program Control
 
-\## Student Information
+## Functions / Modules Developed
+- Developed the core program entry point in `main.c`.
+- Implemented `displayMainMenu()` to present the system's main navigation options.
+- Implemented `main()` to control the main program loop.
+- Used a `do-while` loop to keep the system running until the user selects Exit.
+- Used `readMenuChoice()` to obtain and validate the main menu selection.
+- Implemented the `switch` statement that routes the user to `employeeMenu()`, `budgetMenu()`, `supplierMenu()`, `assetMenu()` and `displayReports()`.
+- Integrated the main menu with the separate project modules through their header files.
 
+## GitHub Contribution
+**Repository:** https://github.com/Crishco-Brothers/_PAP_Project_
 
+**Verified contribution:**
+- **Commit:** `Soini's final push`
+- **Description:** Pushed the completed `main.c` module and integrated the main program control with the other project modules.
 
-\* Student Name: Soini Imbili
+## Testing Performed
+- Tested the main menu options to confirm that each option opens the correct module.
+- Tested repeated navigation back to the main menu after using the individual modules.
+- Tested the Exit option to confirm that the program terminates cleanly.
+- Tested invalid main-menu values through the shared input-validation functions.
+- Checked that the final `main.c` integrates and compiles with all project modules.
 
-\* Student Number: 226067335
-
-
-
-\## Assigned Responsibility
-
-
-
-\* Primary responsibility: main module programmer
-
-
-
-\## Functions / Modules Developed
-
-
-
-\* Developed the core entry point and control logic in `main.c` for the Municipal Financial Management System.
-
-\* Implemented the `displayMainMenu(void)` function to print the primary interface options to the console.
-
-\* The main menu displays choices for Employee Management, Budget Management, Supplier Management, Asset Management, Reports, and an Exit option.
-
-\* Created the `main(void)` function, which utilizes a `do-while` loop to continuously run the application until the user chooses to exit.
-
-\* Programmed a `switch` statement to process user input (captured via `readMenuChoice`) and trigger the appropriate external module functions, including `employeeMenu()`, `budgetMenu()`, `supplierMenu()`, `assetMenu()`, and `displayReports()`.
-
-
-
-\## GitHub Contribution
-
-
-
-\* Repository: https://github.com/Crishco-Brothers/\*PAP\\\_Project\*
-
-\* List your actual commits/branches/pull requests:
-
-\* Commit: Soini's final push – Description: pushed the whole main moduel
-
+## Individual Understanding
+I can explain:
+1. How the main menu controls the application.
+2. How the `do-while` loop keeps the application running.
+3. How the `switch` statement routes the user's choice.
+4. How `readMenuChoice()` validates the user's menu selection.
